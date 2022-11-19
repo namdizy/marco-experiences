@@ -1,0 +1,19 @@
+<div id="category" *ngFor="let category of categories">
+  <div id="header">
+    <h2 id="title">
+      {{ category.title }}
+    </h2>
+    <button class="icon-button" routerLink="/detail/{{ category.id }}">
+      <mat-icon class="white-icon">keyboard_arrow_right</mat-icon>
+    </button>
+  </div>
+  <div class="scroll-container">
+    <div
+      class="item"
+      *ngFor="let categoryItem of category.items | slice: 0:4; let last = last"
+      [ngClass]="{ 'last-child': last }"
+    >
+      <app-category-item [categoryItem]="categoryItem"></app-category-item>
+    </div>
+  </div>
+</div>

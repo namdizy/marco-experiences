@@ -1,0 +1,26 @@
+#route {
+  padding: 6px 16px;
+  margin-inline-end: 12px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: white;
+}
+
+#route.selected {
+  color: black;
+  background-color: white;
+}
+
+child:last-child {
+  margin-inline-end: 0;
+}
+
+.nav[scrollx="true"] {
+  display: flex;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  overflow-x: hidden;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}

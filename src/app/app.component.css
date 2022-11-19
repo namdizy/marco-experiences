@@ -1,0 +1,52 @@
+@media screen and (min-width: 1201px) {
+  #container {
+    margin: 0 340px;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  #container {
+    margin: 0 280px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  #container {
+    margin: 0 160px;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 769px) {
+  #container {
+    margin: 0 60px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #container {
+    margin: 0 20px;
+  }
+}
+
+#toolbar {
+  display: flex;
+  background-color: #0d0d0d;
+  color: white;
+  justify-items: stretch;
+}
+
+.spacer {
+  display: flex;
+  justify-self: center;
+  flex: 1 1 auto;
+}
+
+#title {
+  margin-top: 84px;
+  margin-bottom: 48px;
+}
+
+#navbar {
+  margin-top: 48px;
+  margin-bottom: 48px;
+}

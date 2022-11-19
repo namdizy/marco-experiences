@@ -1,0 +1,13 @@
+<div id="container">
+  <h2>{{ category.title }}</h2>
+
+  <div class="scroll-container">
+    <div
+      class="item"
+      *ngFor="let categoryItem of category.items; let last = last"
+      [ngClass]="{ 'last-child': last }"
+    >
+      <app-category-item [categoryItem]="categoryItem"></app-category-item>
+    </div>
+  </div>
+</div>

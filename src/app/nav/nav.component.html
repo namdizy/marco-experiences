@@ -1,0 +1,11 @@
+<div class="nav" scrollX="true">
+  <span
+    id="route"
+    *ngFor="let category of categories"
+    [ngClass]="{ selected: selectedCategoryId == category.id }"
+    routerLink="/detail/{{ category.id }}"
+    (click)="setSelectedCategoryId(category.id)"
+  >
+    {{ category.title }}
+  </span>
+</div>

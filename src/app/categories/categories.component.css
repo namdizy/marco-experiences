@@ -1,0 +1,42 @@
+#category {
+  margin-top: 64px;
+}
+
+#title {
+  margin-bottom: 24px;
+}
+
+#item {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.white-icon {
+  color: white;
+}
+
+.white-icon svg {
+  fill: white;
+}
+
+.icon-button {
+  background-color: transparent;
+}
+
+.scroll-container {
+  display: flex;
+  overflow-x: scroll;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.scroll-container :not(.last-child) {
+  margin-inline-end: 24px;
+}
